@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac87e997-0e5b-4ed8-99f7-20641fd7cdcd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="22gCjOcsjWiHGKs4OmNgdPHGoBS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bo_scode" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Desktop\坚果云共享\贝叶斯优化\bayes_opt\bo - 重写库源码" />
+      <recent name="E:\Desktop\BayesianOptimization-master\bayes_opt\test1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Desktop\github同步代码\bayesian-optimization\bayes_opt\bo_scode" />
+      <recent name="E:\Desktop\坚果云共享\贝叶斯优化\bayes_opt\bo - 重写库源码" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.3 BO优化随机森林参数 &amp; 区域收缩">
+    <configuration name="1 run a simple bo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bayes_opt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bo - 区域缩减" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bo - 区域缩减/1 run a simple bo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2 Sequential Domain Reduction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bayes_opt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bo - 区域缩减" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bo - 区域缩减/2 Sequential Domain Reduction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2. 保存优化结果&amp;在已有优化结果基础上重启新对象继续优化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bayes_opt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bayesian - bo简单例子 &amp; 保存bo优化结果" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bayesian - bo简单例子 &amp; 保存bo优化结果/2. 保存优化结果&amp;在已有优化结果基础上重启新对象继续优化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3 BO优化随机森林参数 &amp; 区域收缩" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bayes_opt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bo - 区域缩减" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bo - 区域缩减/3 BO优化随机森林参数 &amp; 区域收缩.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3. 简单实例输出最小值" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bayes_opt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bayesian - bo简单例子 &amp; 保存bo优化结果" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bayesian - bo简单例子 &amp; 保存bo优化结果/3. 简单实例输出最小值.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.3 BO优化随机森林参数 &amp; 区域收缩" />
+        <item itemvalue="Python.2 Sequential Domain Reduction" />
+        <item itemvalue="Python.1 run a simple bo" />
+        <item itemvalue="Python.2. 保存优化结果&amp;在已有优化结果基础上重启新对象继续优化" />
+        <item itemvalue="Python.3. 简单实例输出最小值" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac87e997-0e5b-4ed8-99f7-20641fd7cdcd" name="Default Changelist" comment="" />
+      <created>1640249977453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640249977453</updated>
+      <workItem from="1640249978522" duration="17429000" />
+      <workItem from="1640326498282" duration="4000" />
+      <workItem from="1640326585499" duration="10668000" />
+      <workItem from="1640691741009" duration="1257000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="195" key="FileChooserDialogImpl" timestamp="1640419411370">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="634" y="195" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1640419411370" />
+    <state width="1260" height="225" key="GridCell.Tab.0.bottom" timestamp="1640619129287">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="225" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1640619129287" />
+    <state width="1260" height="225" key="GridCell.Tab.0.center" timestamp="1640619129287">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="225" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1640619129287" />
+    <state width="1260" height="225" key="GridCell.Tab.0.left" timestamp="1640619129287">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="225" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1640619129287" />
+    <state width="1260" height="225" key="GridCell.Tab.0.right" timestamp="1640619129287">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="225" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1640619129287" />
+    <state width="1260" height="236" key="GridCell.Tab.1.bottom" timestamp="1640505736769">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1640505736769" />
+    <state width="1260" height="236" key="GridCell.Tab.1.center" timestamp="1640505736769">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1640505736769" />
+    <state width="1260" height="236" key="GridCell.Tab.1.left" timestamp="1640505736769">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1640505736769" />
+    <state width="1260" height="236" key="GridCell.Tab.1.right" timestamp="1640505736769">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1640505736769" />
+    <state x="200" y="46" key="SettingsEditor" timestamp="1640503353892">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="200" y="46" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1640503353892" />
+    <state x="324" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1640618405054">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="324" y="204" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1640618405054" />
+    <state x="304" y="83" width="672" height="678" key="search.everywhere.popup" timestamp="1640505702228">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="304" y="83" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1640505702228" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test1/3 BO优化随机森林参数.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../../anaconda3/Lib/site-packages/scipy/stats/_distn_infrastructure.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="b" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
