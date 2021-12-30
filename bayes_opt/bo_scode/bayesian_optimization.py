@@ -127,6 +127,7 @@ class BayesianOptimization(Observable):
     def suggest(self, utility_function):
         """Most promissing point to probe next"""
         if len(self._space) == 0:
+            print('sample为空执行随机生成一个样本点')
             return self._space.array_to_params(self._space.random_sample())
 
         # Sklearn's GP throws a large number of warnings at times, but
@@ -153,9 +154,21 @@ class BayesianOptimization(Observable):
             # 最少得有一个初始样本
             init_points = max(init_points, 1)
 
-        for _ in range(init_points):
-            # 随机生成初始样本，并放入_queue中
-            self._queue.add(self._space.random_sample())
+        '''
+            注释代码：随机生成样本代码(随机抽样一次只生成一个样本）
+            2021/12/29 19:17
+        '''
+        # for _ in range(init_points):
+        #     # 随机生成初始样本，并放入_queue中
+        #     self._queue.add(self._space.random_sample())
+        '''
+            新增代码：lhs生成样本代码（拉丁超立方根据初始的init_points大小，一次生成所有的init_points样本）
+            2021/12/29 19:17
+        '''
+        lhsample = self._space.lhs_sample(init_points)
+        for l in lhsample:
+            # print(l.ravel())
+            self._queue.add(l.ravel())
 
     def _prime_subscriptions(self):
         if not any([len(subs) for subs in self._events.values()]):
@@ -215,6 +228,10 @@ class BayesianOptimization(Observable):
                 self.set_bounds(
                     self._bounds_transformer.transform(self._space))
 
+            '''
+               注释代码：以前自己加的判断迭代收敛的方法
+               2021/12/29 19:17
+            '''
             # 判断是否达到收敛标准
             pre_target = cur_target
             # 获取x_probe 对应的target，_space.probe会返回target值

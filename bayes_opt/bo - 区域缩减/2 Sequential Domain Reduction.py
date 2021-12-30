@@ -12,7 +12,7 @@ def ackley(**kwargs):
 
 
 # 贝叶斯优化器，带bound_transformer
-def bo(pbounds, btrans):
+def mu_bo(pbounds, btrans):
     # 优化问题，指定 bound_transformer 变量
     mutating_optimizer = BayesianOptimization(
         f=ackley,
@@ -24,19 +24,39 @@ def bo(pbounds, btrans):
     # 开始优化
     mutating_optimizer.maximize(
         init_points=2,
-        n_iter=5,
+        n_iter=60,
     )
 
     print(mutating_optimizer.max)
     return mutating_optimizer
 
+# 标准的贝叶斯优化过程，没有参数范围收缩过程
+def st_bo(pbounds):
+    standard_optimizer = BayesianOptimization(
+        f=ackley,
+        pbounds=pbounds,
+        random_state=1,
+    )
+
+    # 开始优化
+    standard_optimizer.maximize(
+        init_points=2,
+        n_iter=60,
+    )
+
+    print(standard_optimizer.max)
+    return standard_optimizer
 
 # 画出贝叶斯优化过程中每次迭代选择的参数值对应的y值
-def draw_target(mo):
-    plt.plot(mo.space.target, label='Mutated Optimizer')
+def draw_mu_target(mu):
+    plt.plot(mu.space.target, label='Mutated Optimizer')
     plt.legend()
     plt.show()
 
+def draw_st_target(st):
+    plt.plot(st.space.target, label='Standard Optimizer',color='g')
+    plt.legend()
+    plt.show()
 
 # 画出第一个参数范围的收缩过程
 def draw_btrans(mo):
@@ -58,6 +78,9 @@ if __name__ == "__main__":
     # 定义顺序域降低转换器
     bounds_transformer = SequentialDomainReductionTransformer()
 
-    mo = bo(pbounds, bounds_transformer)
-    draw_target(mo)
+    mo = mu_bo(pbounds, bounds_transformer)
+    st = st_bo(pbounds)
+    draw_mu_target(mo)
     draw_btrans(mo)
+
+    draw_st_target(st)

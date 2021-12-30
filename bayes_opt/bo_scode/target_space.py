@@ -1,5 +1,6 @@
 import numpy as np
 from .util import ensure_rng
+from sample.LHS_sample import LHSample
 
 
 def _hashable(x):
@@ -229,11 +230,32 @@ class TargetSpace(object):
         """
         # TODO: support integer, category, and basic scipy.optimize constraints
         data = np.empty((1, self.dim))
+        print(self.dim)
+        # numpy.ndarray [[-5.  5.][-2. 15.]]
+        # print(self._bounds.tolist())
         for col, (lower, upper) in enumerate(self._bounds):
             # 在 lower, upper 内随机生成一个实数
             data.T[col] = self.random_state.uniform(lower, upper, size=1)
         # 返回随机生成的样本点（只有参数值，没有target）
+        print(data.ravel())
         return data.ravel()
+
+    '''
+        新增代码: 新增lhs采样 init_points 个样本点
+        2021/12/29 19:17
+    '''
+    # 拉丁超立方生成样本点
+    def lhs_sample(self, init_points):
+        data = np.empty((1, self.dim))
+        bounds = self._bounds.tolist()
+        # 创建lhs实例
+        l = LHSample(self.dim, bounds, init_points)
+
+        # 生成lhs样本（20个）
+        lhs_sample = l.lhs()
+        # 返回20个样本，list形式内嵌
+        return lhs_sample
+
 
     # 返回当前代（样本集合中的最大target值对应的样本）
     def max(self):

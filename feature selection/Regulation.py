@@ -31,7 +31,9 @@ def l1_lasso():
     boston = load_boston()
     scaler = StandardScaler()
     X = scaler.fit_transform(boston["data"])
+    print(X)
     Y = boston["target"]
+    print(Y)
     names = boston["feature_names"]
 
     lasso = Lasso(alpha=.3)
@@ -76,5 +78,5 @@ def l2_ridge():
         print("Ridge model:", linear_model.pretty_print_linear(ridge.coef_))
 
 if __name__ == '__main__':
-    # l1_lasso()
-    l2_ridge()
+    l1_lasso()
+    # l2_ridge()

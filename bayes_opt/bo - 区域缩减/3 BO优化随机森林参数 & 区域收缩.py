@@ -41,7 +41,7 @@ class BO:
                                    max_depth=int(max_depth),
                                    random_state=2
                                    ),
-            x, y, scoring='roc_auc', cv=3
+            x, y, scoring='roc_auc', cv=6
         ).mean()
         return val
 
@@ -116,9 +116,10 @@ class BO:
 
 
 if __name__ == "__main__":
+    # 生成 1000个分类样本（10个特征，2个分类）
     x, y = make_classification(n_samples=1000, n_features=10, n_classes=2)
 
-    bo = BO(init_points=5, n_iter=200)
+    bo = BO(init_points=30, n_iter=200)
     # 基础的贝叶斯优化器
     rf_bo = bo.simple_bo()
     # 带范围转换器的贝叶斯优化器
@@ -127,3 +128,4 @@ if __name__ == "__main__":
     # bo.draw_target(rf_bo, mutat_bo)
     # 画出参数收缩过程
     bo.draw_btrans(mutat_bo)
+
