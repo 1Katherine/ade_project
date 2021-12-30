@@ -66,45 +66,14 @@ class LHSample():
                out=result)
         return result
 
-class Queue:
-    def __init__(self):
-        self._queue = []
-
-    @property
-    def empty(self):
-        return len(self) == 0
-
-    def __len__(self):
-        return len(self._queue)
-
-    def __next__(self):
-        if self.empty:
-            raise StopIteration("Queue is empty, no more objects to retrieve.")
-        obj = self._queue[0]
-        self._queue = self._queue[1:]
-        return obj
-
-    def next(self):
-        return self.__next__()
-
-    def add(self, obj):
-        """Add object to end of queue."""
-        self._queue.append(obj)
-
 
 if __name__ == '__main__':
     D = 2 # 两个参数
     bounds = [[0,90],[0,30]]  # 参数的边界范围
     print(type(bounds))
     N = 30 # LHS层数为30层（将范围划分为30份）
-    q = Queue()
-    l = LHSample(D, bounds, N)
+    l = LHSample(len(bounds), bounds, N)
     result = l.lhs()
-    for r in result:
-        # print(r.ravel())
-        q.add(r.ravel())
-        # q.add(result)
-        print(q.__len__())
-    while not q.empty :
-        print(q.next())
+    print(result)
+
 
