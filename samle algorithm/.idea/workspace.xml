@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a37dfa32-50ce-4f99-81ce-5b42af9a520f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bayes_opt/sample/LHS_sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bayes_opt/sample/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bayes_opt/sample/wLHS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LHS/2 wLHS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bayes_opt/.idea/bayes_opt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/.idea/bayes_opt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bayes_opt/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bayes_opt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bayes_opt/bo - 区域缩减/2 Sequential Domain Reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/bo - 区域缩减/2 Sequential Domain Reduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bayes_opt/bo - 区域缩减/3 BO优化随机森林参数 &amp; 区域收缩.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/bo - 区域缩减/3 BO优化随机森林参数 &amp; 区域收缩.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bayes_opt/bo_scode/bayesian_optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/bo_scode/bayesian_optimization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bayes_opt/bo_scode/target_space.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/bo_scode/target_space.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Latin hypercube sampling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Latin hypercube sampling.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bayes_opt/sample/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bayes_opt/sample/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../feature selection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../feature selection/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640616464868</updated>
       <workItem from="1640749343795" duration="7599000" />
+      <workItem from="1640851749271" duration="1595000" />
     </task>
     <servers />
   </component>
@@ -171,6 +165,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/samle_algorithm$random_and_lhs.coverage" NAME="random and lhs Coverage Results" MODIFIED="1640765208239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/integration" />

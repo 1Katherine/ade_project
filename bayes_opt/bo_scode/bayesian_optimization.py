@@ -232,13 +232,13 @@ class BayesianOptimization(Observable):
                注释代码：以前自己加的判断迭代收敛的方法
                2021/12/29 19:17
             '''
-            # 判断是否达到收敛标准
-            pre_target = cur_target
-            # 获取x_probe 对应的target，_space.probe会返回target值
-            cur_target = self._space.probe(x_probe)
-            if abs(cur_target - pre_target) / abs(cur_target) < 0.0001:
-                print('达到收敛要求,不再继续搜索新的样本。最后两次迭代找到的样本点target差值为：' + str(abs(cur_target - pre_target) / abs(cur_target)))
-                break
+            # # 判断是否达到收敛标准
+            # pre_target = cur_target
+            # # 获取x_probe 对应的target，_space.probe会返回target值
+            # cur_target = self._space.probe(x_probe)
+            # if abs(cur_target - pre_target) / abs(cur_target) < 0.0001:
+            #     print('达到收敛要求,不再继续搜索新的样本。最后两次迭代找到的样本点target差值为：' + str(abs(cur_target - pre_target) / abs(cur_target)))
+            #     break
 
         # 记录搜索算法结束时间
         end_time = time.time()
