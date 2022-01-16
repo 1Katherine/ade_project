@@ -73,5 +73,5 @@ def mean_decrease_accuracy():
     print(sorted([(round(np.mean(score), 4), feat) for feat, score in scores.items()], reverse=True))
 
 if __name__ == '__main__':
-    # mean_decrease_impurity()
-    mean_decrease_accuracy()
+    mean_decrease_impurity()
+    # mean_decrease_accuracy()
