@@ -61,6 +61,7 @@ class BO:
         rf_bo.maximize(
             init_points=self.init_points,
             n_iter=self.n_iter,
+            acq='ei'
         )
         # 输出最大值
         print(rf_bo.max)
@@ -82,6 +83,7 @@ class BO:
         mutating_optimizer.maximize(
             init_points=self.init_points,
             n_iter=self.n_iter,
+            acq='ei'
         )
         print(mutating_optimizer.max)
         return mutating_optimizer
@@ -119,7 +121,7 @@ if __name__ == "__main__":
     # 生成 1000个分类样本（10个特征，2个分类）
     x, y = make_classification(n_samples=1000, n_features=10, n_classes=2)
 
-    bo = BO(init_points=30, n_iter=200)
+    bo = BO(init_points=2, n_iter=20)
     # 基础的贝叶斯优化器
     rf_bo = bo.simple_bo()
     # 带范围转换器的贝叶斯优化器

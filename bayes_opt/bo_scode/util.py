@@ -119,12 +119,17 @@ class UtilityFunction(object):
 
     @staticmethod
     def _ei(x, gp, y_max, xi):
+
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
             mean, std = gp.predict(x, return_std=True)
-  
+
+        gp = gp.fit(1,2)
+        x = x[:, 1:2]
+        print('ei x = ' + str(x))
         a = (mean - y_max - xi)
         z = a / std
+        print('ei = ' + str(a * norm.cdf(z) + std * norm.pdf(z)))
         return a * norm.cdf(z) + std * norm.pdf(z)
 
     @staticmethod
